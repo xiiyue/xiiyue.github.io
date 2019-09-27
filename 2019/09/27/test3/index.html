@@ -58,14 +58,14 @@
 </script>
 
   <meta name="description" content="测试3">
-<meta name="keywords" content="1">
+<meta name="keywords" content="没有,why">
 <meta property="og:type" content="article">
 <meta property="og:title" content="测试文档3">
 <meta property="og:url" content="http://xiiyue.github.io/2019/09/27/test3/index.html">
 <meta property="og:site_name" content="鸵鸟兮曰╮(╯_╰)╭">
 <meta property="og:description" content="测试3">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-27T03:50:20.549Z">
+<meta property="og:updated_time" content="2019-09-27T09:25:21.100Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="测试文档3">
 <meta name="twitter:description" content="测试3">
@@ -282,7 +282,7 @@
                 
               
 
-              <time title="创建时间：2019-09-27 10:59:18 / 修改时间：11:50:20" itemprop="dateCreated datePublished" datetime="2019-09-27T10:59:18+08:00">2019-09-27</time>
+              <time title="创建时间：2019-09-27 10:59:18 / 修改时间：17:25:21" itemprop="dateCreated datePublished" datetime="2019-09-27T10:59:18+08:00">2019-09-27</time>
             </span>
           
             
@@ -330,7 +330,9 @@
           
           <div class="post-tags">
             
-              <a href="/tags/1/" rel="tag"># 1</a>
+              <a href="/tags/没有/" rel="tag"># 没有</a>
+            
+              <a href="/tags/why/" rel="tag"># why</a>
             
           </div>
         
@@ -340,8 +342,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/09/26/hello-world/" rel="next" title="Hello World">
-                  <i class="fa fa-chevron-left"></i> Hello World
+                <a href="/2019/09/27/test4/" rel="next" title="测试文档4">
+                  <i class="fa fa-chevron-left"></i> 测试文档4
                 </a>
               
             </div>
@@ -350,8 +352,8 @@
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2019/09/27/test4/" rel="prev" title="测试文档4">
-                  测试文档4 <i class="fa fa-chevron-right"></i>
+                <a href="/2019/09/27/test2/" rel="prev" title="测试文档2">
+                  测试文档2 <i class="fa fa-chevron-right"></i>
                 </a>
               
             </div>
@@ -443,7 +445,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -552,8 +554,40 @@
 
 
 
+<script>
+if (document.querySelectorAll('div.pdf').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js', () => {
+    document.querySelectorAll('div.pdf').forEach(element => {
+      PDFObject.embed(element.getAttribute('target'), element, {
+        pdfOpenParams: {
+          navpanes: 0,
+          toolbar: 0,
+          statusbar: 0,
+          pagemode: 'thumbs',
+          view: 'FitH'
+        },
+        PDFJS_URL: '/lib/pdf/web/viewer.html',
+        height: element.getAttribute('height') || '500px'
+      });
+    });
+  }, window.PDFObject);
+}
+</script>
 
 
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme: 'forest',
+      logLevel: 3,
+      flowchart: { curve: 'linear' },
+      gantt: { axisFormat: '%m/%d/%Y' },
+      sequence: { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
 
 
 

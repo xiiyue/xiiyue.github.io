@@ -62,7 +62,7 @@
 <meta property="og:url" content="http://xiiyue.github.io/tags/index.html">
 <meta property="og:site_name" content="鸵鸟兮曰╮(╯_╰)╭">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-27T03:47:15.117Z">
+<meta property="og:updated_time" content="2019-09-27T10:00:44.987Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tags">
   <link rel="canonical" href="http://xiiyue.github.io/tags/">
@@ -79,7 +79,7 @@
   };
 </script>
 
-  <title>标签:  | 鸵鸟兮曰╮(╯_╰)╭</title>
+  <title>tags | 鸵鸟兮曰╮(╯_╰)╭</title>
   
 
 
@@ -262,26 +262,49 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">tags
+
+</h1>
+
+<div class="post-meta">
   
-  
-  
-  <div class="post-block tag">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1 class="collection-header"><small>标签</small>
-        </h1>
-      </div>
+
+</div>
+
+</header>
 
       
-
+      
+      
+      <div class="post-body">
+        
+          <div class="tag-cloud">
+            <div class="tag-cloud-title">
+              目前共计 4 个标签
+            </div>
+            <div class="tag-cloud-tags">
+              <a href="/tags/1/" style="font-size: 21px; color: #6f6f6f">1</a> <a href="/tags/2/" style="font-size: 30px; color: #111">2</a> <a href="/tags/why/" style="font-size: 12px; color: #ccc">why</a> <a href="/tags/没有/" style="font-size: 12px; color: #ccc">没有</a>
+            </div>
+          </div>
+        
+      </div>
+      
+      
+      
     </div>
+    
+
+    
+    
+    
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
@@ -300,6 +323,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -354,7 +382,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -463,8 +491,40 @@
 
 
 
+<script>
+if (document.querySelectorAll('div.pdf').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js', () => {
+    document.querySelectorAll('div.pdf').forEach(element => {
+      PDFObject.embed(element.getAttribute('target'), element, {
+        pdfOpenParams: {
+          navpanes: 0,
+          toolbar: 0,
+          statusbar: 0,
+          pagemode: 'thumbs',
+          view: 'FitH'
+        },
+        PDFJS_URL: '/lib/pdf/web/viewer.html',
+        height: element.getAttribute('height') || '500px'
+      });
+    });
+  }, window.PDFObject);
+}
+</script>
 
 
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme: 'forest',
+      logLevel: 3,
+      flowchart: { curve: 'linear' },
+      gantt: { axisFormat: '%m/%d/%Y' },
+      sequence: { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
 
 
 

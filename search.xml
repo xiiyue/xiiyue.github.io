@@ -56,6 +56,33 @@
     
     
     <entry>
+      <title>测试文档3</title>
+      <link href="/2019/09/27/test3/"/>
+      <url>/2019/09/27/test3/</url>
+      
+        <content type="html"><![CDATA[<p>测试3</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> a </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 没有 </tag>
+            
+            <tag> why </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>测试文档4</title>
       <link href="/2019/09/27/test4/"/>
       <url>/2019/09/27/test4/</url>
@@ -75,31 +102,6 @@
             <tag> 1 </tag>
             
             <tag> 2 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>测试文档3</title>
-      <link href="/2019/09/27/test3/"/>
-      <url>/2019/09/27/test3/</url>
-      
-        <content type="html"><![CDATA[<p>测试3</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> a </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 1 </tag>
             
         </tags>
       
