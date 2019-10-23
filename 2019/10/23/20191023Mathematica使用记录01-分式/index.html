@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="Mathematica使用记录01-分式"><meta name="keywords" content="Mathematic"><meta name="author" content="xiyue"><meta name="copyright" content="xiyue"><title>Mathematica使用记录01-分式 | 兮曰么得记忆力</title><link rel="shortcut icon" href="/favicon-xiyue-32x32.ico"><link rel="stylesheet" href="/css/index.css?version=1.6.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.6.1"><link rel="dns-prefetch" href="https://cdn.staticfile.org"><link rel="dns-prefetch" href="https://cdn.bootcss.com"><link rel="dns-prefetch" href="https://creativecommons.org"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  }
+} </script></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Apart-我裂开了"><span class="toc-text">Apart-我裂开了</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Together-通分求和"><span class="toc-text">Together-通分求和</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Expand-展开"><span class="toc-text">Expand-展开</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Factor-因式分解-没有裂开"><span class="toc-text">Factor-因式分解(没有裂开)</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/xiyueavatar.JPG"></div><div class="author-info__name text-center">xiyue</div><div class="author-info__description text-center"></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">1</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">1</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">1</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/top_img3.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">兮曰么得记忆力</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> 搜索</span></a><a class="site-page" href="/">首页</a><a class="site-page" href="/categories">分类</a><a class="site-page" href="/tags">标签</a><a class="site-page" href="/archives">文章总览</a></span></div><div id="post-info"><div id="post-title">Mathematica使用记录01-分式</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2019-10-23</time><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/研究学习/">研究学习</a></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><p>&emsp;&emsp;做作业的时候，碰到了分子还可以分母不忍直视的分式，为了做反z变换，必须将其化为几个可以查表的分式，虽然我可以手算，但是嘛。。。</p>
+<a id="more"></a>
+
+<h2 id="Apart-我裂开了"><a href="#Apart-我裂开了" class="headerlink" title="Apart-我裂开了"></a>Apart-我裂开了</h2><p>&emsp;&emsp;函数原型：<code>Apart[expr,var]</code><br>&emsp;&emsp;expr就是你要处理的表达式<br>&emsp;&emsp;var是可选的，可以不填，如果你的表达式中有多个变量，如x和y，填x则将y视为常数处理。</p>
+<p>&emsp;&emsp;<font color="Blue" size="5">例</font>：  <font size="6">$\frac{1}{x^4-2 x^2+1}$</font> </p>
+<p>&emsp;&emsp;在Mathematica中输入</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Apart[1/(1-2*x^2+x^4)]</span><br></pre></td></tr></table></figure>
+
+<p>&emsp;&emsp;shift 回车，输出结果如下图</p>
+<p><img src="https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/20191023Mathematica_01.png" alt="Apart结果"></p>
+<p>&emsp;&emsp;如果想把分开的几个分式合并为一个呢？</p>
+<h2 id="Together-通分求和"><a href="#Together-通分求和" class="headerlink" title="Together-通分求和"></a>Together-通分求和</h2><p>&emsp;&emsp;函数原型：<code>Together[expr]</code><br>&emsp;&emsp;expr就是你要处理的表达式<br>&emsp;&emsp;在Mathematica中输入</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Together[1/(4*(-1+x)^2)-1/(4*(-1+x))+1/(4*(1+x)^2)+1/(4*(1+x))]</span><br></pre></td></tr></table></figure>
+
+<p>&emsp;&emsp;shift 回车，输出结果如下图</p>
+<p><img src="https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/20191023Mathematica_02.png" alt="Together结果"></p>
+<p>&emsp;&emsp;可以看到，结果并不是完全展开式。</p>
+<p>&emsp;&emsp;所以<font size="4">$\frac{1}{(x-1)^2 (x+1)^2}$</font>跟<font size="4">$\frac{1}{4 (x-1)^2}+\frac{1}{4 (x+1)}+\frac{1}{4 (x+1)^2}-\frac{1}{4 (x-1)}$</font>才是真正的一对？</p>
+<p>&emsp;&emsp;如果想得到展开式呢？</p>
+<h2 id="Expand-展开"><a href="#Expand-展开" class="headerlink" title="Expand-展开"></a>Expand-展开</h2><p>&emsp;&emsp;函数原型：<code>Expand[expr]</code><br>&emsp;&emsp;expr就是你要处理的表达式<br>&emsp;&emsp;在Mathematica中输入</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Expand[(4*(-1+x)^2)]</span><br></pre></td></tr></table></figure>
+
+<p>&emsp;&emsp;shift 回车，输出结果如下图</p>
+<p><img src="https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/20191023Mathematica_04.png" alt="Expand结果"></p>
+<p>&emsp;&emsp;但是我想直接处理分式，应该选择Expand的扩展ExpandDenominator函数，即展开分母。如图</p>
+<p><img src="https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/20191023Mathematica_05.png" alt="ExpandDenominator结果1"></p>
+<p>&emsp;&emsp;回过头处理刚才Together没搞定的多个分式。</p>
+<p><img src="https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/20191023Mathematica_03.png" alt="ExpandDenominator结果2"></p>
+<p>&emsp;&emsp;第一次输入的是几个分式之和，它竟然是一个一个分开处理的。我只好先Together，再ExpandDenominator。</p>
+<h2 id="Factor-因式分解-没有裂开"><a href="#Factor-因式分解-没有裂开" class="headerlink" title="Factor-因式分解(没有裂开)"></a>Factor-因式分解(没有裂开)</h2><p>&emsp;&emsp;函数原型：<code>Factor[expr]</code></p>
+<p>&emsp;&emsp;在Mathematica中输入</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Factor[1/(4*x^2-8*x+4)]</span><br></pre></td></tr></table></figure>
+
+<p>&emsp;&emsp;输出结果如下图</p>
+<p><img src="https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/20191023Mathematica_06.png" alt="Factor结果"></p>
+<p>&emsp;&emsp;另外，网上查Wolfram语法时发现用谷歌访问助手能流畅浏览！</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">xiyue</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://xiiyue.github.io/2019/10/23/20191023Mathematica使用记录01-分式/">http://xiiyue.github.io/2019/10/23/20191023Mathematica使用记录01-分式/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://xiiyue.github.io">兮曰么得记忆力</a>！</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Mathematic/">Mathematic</a></div><nav id="pagination"></nav><div id="vcomment"></div><script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = 'false' == true ? true : false;
+var verify = 'false' == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'8kdRtt0EnlQa544ObXMdh3vL-gzGzoHsz',
+  appKey:'WwjOKTNywCjmr3wTVW0Pq6WG',
+  placeholder:'',
+  avatar:'mm',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang: 'zh-cn'
+})</script></div></div><footer class="footer-bg" style="background-image: url(https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/top_img3.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2019 By xiyue</div><div class="framework-info"><span>驱动 - </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.6.1"></script><script src="/js/fancybox.js?version=1.6.1"></script><script src="/js/sidebar.js?version=1.6.1"></script><script src="/js/copy.js?version=1.6.1"></script><script src="/js/fireworks.js?version=1.6.1"></script><script src="/js/transition.js?version=1.6.1"></script><script src="/js/scroll.js?version=1.6.1"></script><script src="/js/head.js?version=1.6.1"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src="/js/search/local-search.js"></script><script>if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+}</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
