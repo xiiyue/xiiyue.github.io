@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>兮曰没有记忆力</title>
+  <title>兮曰么得记忆力</title>
   
   <subtitle>早睡早起身体好</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xiiyue.github.io/"/>
-  <updated>2019-09-27T03:27:15.989Z</updated>
+  <updated>2019-10-23T09:55:39.837Z</updated>
   <id>http://xiiyue.github.io/</id>
   
   <author>
@@ -17,21 +17,28 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://xiiyue.github.io/2019/09/26/hello-world/"/>
-    <id>http://xiiyue.github.io/2019/09/26/hello-world/</id>
-    <published>2019-09-26T07:54:30.536Z</published>
-    <updated>2019-09-27T03:27:15.989Z</updated>
+    <title>Mathematica使用记录</title>
+    <link href="http://xiiyue.github.io/2019/10/23/20191023Mathematica/"/>
+    <id>http://xiiyue.github.io/2019/10/23/20191023Mathematica/</id>
+    <published>2019-10-23T08:02:08.000Z</published>
+    <updated>2019-10-23T09:55:39.837Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="1-分式分解"><a href="#1-分式分解" class="headerlink" title="1.分式分解"></a>1.分式分解</h2><p>问题描述：分母为完全展开的多项式，如   <font size="5">$\frac{1}{x^4-2 x^2+1}$</font> 将其分解为几个分式的和。</p><p>方法：Mathematica中输入</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Apart[1/(1-2*x^2+x^4)]</span><br></pre></td></tr></table></figure><p>注意空心星号就是* </p><p>按shift 回车，输出结果如图</p><p><img src="https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/20191023Mathematica_01.png" alt="Apart结果"></p><p>其逆运算为Together</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Together[1/(4*(-1+x)^2)-1/(4*(-1+x))+1/(4*(1+x)^2)+1/(4*(1+x))]</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/20191023Mathematica_02.png" alt="Together结果"></p><p>结果不是完全展开式，所以<font size="5">$\frac{1}{(x-1)^2 (x+1)^2}$</font>跟<font size="5">$\frac{1}{4 (x-1)^2}+\frac{1}{4 (x+1)}+\frac{1}{4 (x+1)^2}-\frac{1}{4 (x-1)}$</font></p><p>才是真正的一对，如果想得到展开式，应该用ExpandDenominator，即展开分母，是Expand的扩展。</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+      
+      
+        &lt;h2 id=&quot;1-分式分解&quot;&gt;&lt;a href=&quot;#1-分式分解&quot; class=&quot;headerlink&quot; title=&quot;1.分式分解&quot;&gt;&lt;/a&gt;1.分式分解&lt;/h2&gt;&lt;p&gt;问题描述：分母为完全展开的多项式，如   &lt;font size=&quot;5&quot;&gt;$\frac{1}{x^4-2 x^
+      
     
     </summary>
     
     
+      <category term="研究学习" scheme="http://xiiyue.github.io/categories/%E7%A0%94%E7%A9%B6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Mathematic" scheme="http://xiiyue.github.io/tags/Mathematic/"/>
     
   </entry>
   
