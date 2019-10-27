@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>兮曰么得记忆力</title>
+  <title>兮xiyue曰</title>
   
-  <subtitle>早睡早起身体好</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://xiiyue.github.io/"/>
+  <link href="http://xiiyue.gitee.io/"/>
   <updated>2019-10-26T14:50:18.074Z</updated>
-  <id>http://xiiyue.github.io/</id>
+  <id>http://xiiyue.gitee.io/</id>
   
   <author>
     <name>xiyue</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Mathematica使用记录01-分式</title>
-    <link href="http://xiiyue.github.io/2019/10/23/20191023Mathematica%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%9501-%E5%88%86%E5%BC%8F/"/>
-    <id>http://xiiyue.github.io/2019/10/23/20191023Mathematica使用记录01-分式/</id>
+    <link href="http://xiiyue.gitee.io/2019/10/23/20191023Mathematica%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%9501-%E5%88%86%E5%BC%8F/"/>
+    <id>http://xiiyue.gitee.io/2019/10/23/20191023Mathematica使用记录01-分式/</id>
     <published>2019-10-23T08:02:08.000Z</published>
     <updated>2019-10-26T14:50:18.074Z</updated>
     
@@ -32,10 +32,10 @@
     </summary>
     
     
-      <category term="研究学习" scheme="http://xiiyue.github.io/categories/%E7%A0%94%E7%A9%B6%E5%AD%A6%E4%B9%A0/"/>
+      <category term="研究学习" scheme="http://xiiyue.gitee.io/categories/%E7%A0%94%E7%A9%B6%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Mathematic" scheme="http://xiiyue.github.io/tags/Mathematic/"/>
+      <category term="Mathematic" scheme="http://xiiyue.gitee.io/tags/Mathematic/"/>
     
   </entry>
   
