@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xiiyue.github.io/"/>
-  <updated>2019-10-23T13:34:04.529Z</updated>
+  <updated>2019-10-26T14:50:18.074Z</updated>
   <id>http://xiiyue.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://xiiyue.github.io/2019/10/23/20191023Mathematica%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%9501-%E5%88%86%E5%BC%8F/"/>
     <id>http://xiiyue.github.io/2019/10/23/20191023Mathematica使用记录01-分式/</id>
     <published>2019-10-23T08:02:08.000Z</published>
-    <updated>2019-10-23T13:34:04.529Z</updated>
+    <updated>2019-10-26T14:50:18.074Z</updated>
     
     <content type="html"><![CDATA[<p>&emsp;&emsp;做作业的时候，碰到了分子还可以分母不忍直视的分式，为了做反z变换，必须将其化为几个可以查表的分式，虽然我可以手算，但是嘛。。。</p><a id="more"></a><h2 id="Apart-我裂开了"><a href="#Apart-我裂开了" class="headerlink" title="Apart-我裂开了"></a>Apart-我裂开了</h2><p>&emsp;&emsp;函数原型：<code>Apart[expr,var]</code><br>&emsp;&emsp;expr就是你要处理的表达式<br>&emsp;&emsp;var是可选的，可以不填，如果你的表达式中有多个变量，如x和y，填x则将y视为常数处理。</p><p>&emsp;&emsp;<font color="Blue" size="5">例</font>：  <font size="6">$\frac{1}{x^4-2 x^2+1}$</font> </p><p>&emsp;&emsp;在Mathematica中输入</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Apart[1/(1-2*x^2+x^4)]</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;shift 回车，输出结果如下图</p><p><img src="https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/20191023Mathematica_01.png" alt="Apart结果"></p><p>&emsp;&emsp;如果想把分开的几个分式合并为一个呢？</p><h2 id="Together-通分求和"><a href="#Together-通分求和" class="headerlink" title="Together-通分求和"></a>Together-通分求和</h2><p>&emsp;&emsp;函数原型：<code>Together[expr]</code><br>&emsp;&emsp;expr就是你要处理的表达式<br>&emsp;&emsp;在Mathematica中输入</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Together[1/(4*(-1+x)^2)-1/(4*(-1+x))+1/(4*(1+x)^2)+1/(4*(1+x))]</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;shift 回车，输出结果如下图</p><p><img src="https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/20191023Mathematica_02.png" alt="Together结果"></p><p>&emsp;&emsp;可以看到，结果并不是完全展开式。</p><p>&emsp;&emsp;所以<font size="4">$\frac{1}{(x-1)^2 (x+1)^2}$</font>跟<font size="4">$\frac{1}{4 (x-1)^2}+\frac{1}{4 (x+1)}+\frac{1}{4 (x+1)^2}-\frac{1}{4 (x-1)}$</font>才是真正的一对？</p><p>&emsp;&emsp;如果想得到展开式呢？</p><h2 id="Expand-展开"><a href="#Expand-展开" class="headerlink" title="Expand-展开"></a>Expand-展开</h2><p>&emsp;&emsp;函数原型：<code>Expand[expr]</code><br>&emsp;&emsp;expr就是你要处理的表达式<br>&emsp;&emsp;在Mathematica中输入</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Expand[(4*(-1+x)^2)]</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;shift 回车，输出结果如下图</p><p><img src="https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/20191023Mathematica_04.png" alt="Expand结果"></p><p>&emsp;&emsp;但是我想直接处理分式，应该选择Expand的扩展ExpandDenominator函数，即展开分母。如图</p><p><img src="https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/20191023Mathematica_05.png" alt="ExpandDenominator结果1"></p><p>&emsp;&emsp;回过头处理刚才Together没搞定的多个分式。</p><p><img src="https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/20191023Mathematica_03.png" alt="ExpandDenominator结果2"></p><p>&emsp;&emsp;第一次输入的是几个分式之和，它竟然是一个一个分开处理的。我只好先Together，再ExpandDenominator。</p><h2 id="Factor-因式分解-没有裂开"><a href="#Factor-因式分解-没有裂开" class="headerlink" title="Factor-因式分解(没有裂开)"></a>Factor-因式分解(没有裂开)</h2><p>&emsp;&emsp;函数原型：<code>Factor[expr]</code></p><p>&emsp;&emsp;在Mathematica中输入</p><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Factor[1/(4*x^2-8*x+4)]</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;输出结果如下图</p><p><img src="https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/20191023Mathematica_06.png" alt="Factor结果"></p><p>&emsp;&emsp;另外，网上查Wolfram语法时发现用谷歌访问助手能流畅浏览！</p>]]></content>
     
@@ -36,25 +36,6 @@
     
     
       <category term="Mathematic" scheme="http://xiiyue.github.io/tags/Mathematic/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>折腾Melody主题</title>
-    <link href="http://xiiyue.github.io/2019/10/23/20191024%E6%8A%98%E8%85%BEMelody%E4%B8%BB%E9%A2%98/"/>
-    <id>http://xiiyue.github.io/2019/10/23/20191024折腾Melody主题/</id>
-    <published>2019-10-23T08:02:08.000Z</published>
-    <updated>2019-10-24T09:48:23.754Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="你在捣鼓什么玩意儿？" scheme="http://xiiyue.github.io/categories/%E4%BD%A0%E5%9C%A8%E6%8D%A3%E9%BC%93%E4%BB%80%E4%B9%88%E7%8E%A9%E6%84%8F%E5%84%BF%EF%BC%9F/"/>
-    
-    
-      <category term="Melody" scheme="http://xiiyue.github.io/tags/Melody/"/>
     
   </entry>
   
