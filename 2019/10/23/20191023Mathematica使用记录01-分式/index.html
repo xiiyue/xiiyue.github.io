@@ -61,7 +61,7 @@
 <meta name="keywords" content="Mathematic">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mathematica使用记录01-分式">
-<meta property="og:url" content="http://xiiyue.gitee.io/2019/10/23/20191023Mathematica使用记录01-分式/index.html">
+<meta property="og:url" content="http://xiiyue.github.io/2019/10/23/20191023Mathematica使用记录01-分式/index.html">
 <meta property="og:site_name" content="兮xiyue曰">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;做作业的时候，碰到了分子还可以分母不忍直视的分式，为了做反z变换，必须将其化为几个可以查表的分式，虽然我可以手算，但是嘛。。。">
 <meta property="og:locale" content="zh-CN">
@@ -76,7 +76,7 @@
 <meta name="twitter:title" content="Mathematica使用记录01-分式">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;做作业的时候，碰到了分子还可以分母不忍直视的分式，为了做反z变换，必须将其化为几个可以查表的分式，虽然我可以手算，但是嘛。。。">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/xiiyue/xiyue_picture/master/img/20191023Mathematica_01.png">
-  <link rel="canonical" href="http://xiiyue.gitee.io/2019/10/23/20191023Mathematica使用记录01-分式/">
+  <link rel="canonical" href="http://xiiyue.github.io/2019/10/23/20191023Mathematica使用记录01-分式/">
 
 
 <script id="page-configurations">
@@ -261,7 +261,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="http://xiiyue.gitee.io/2019/10/23/20191023Mathematica使用记录01-分式/">
+    <link itemprop="mainEntityOfPage" href="http://xiiyue.github.io/2019/10/23/20191023Mathematica使用记录01-分式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xiyue">
@@ -689,34 +689,38 @@ if (document.querySelectorAll('pre.mermaid').length) {
 
   
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="/js/src/Valine.min.js"></script>  
 
-<script>
-NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick';
-  guest = guest.split(',').filter(item => {
-    return GUEST.includes(item);
-  });
-  new Valine({
-    el: '#comments',
-    verify: false,
-    notify: false,
-    appId: '8kdRtt0EnlQa544ObXMdh3vL-gzGzoHsz',
-    appKey: 'WwjOKTNywCjmr3wTVW0Pq6WG',
-    placeholder: '欢迎捧场',
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: false,
-    lang: 'zh-cn' || 'zh-cn',
-    path: location.pathname,
-  });
-  var infoEle = document.querySelector('#comments .info');
-  while(infoEle.hasChildNodes()){
-    infoEle.removeChild(infoEle.firstChild);
-  };
-}, window.Valine)
-</script>
+    
+  
+  <script src="/js/src/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '8kdRtt0EnlQa544ObXMdh3vL-gzGzoHsz',
+        appKey: 'WwjOKTNywCjmr3wTVW0Pq6WG',
+        placeholder: '欢迎捧场',
+        avatar:'mm',
+        guest_info:['nick'] ,  //评论者只需要提供评论的昵称即可
+        pageSize:'10' || 10,
+    });
+    //增加以下六行代码去除 power by valine
+    var infoEle = document.querySelector('#comments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+      infoEle.childNodes.forEach(function(item) {
+        item.parentNode.removeChild(item);
+      });
+    }
+  </script>
 
 </body>
 </html>
