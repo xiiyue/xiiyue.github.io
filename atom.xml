@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://xiiyue.github.io/"/>
+  <link href="http://xiiyue.gitee.io/"/>
   <updated>2019-11-10T11:26:51.521Z</updated>
-  <id>http://xiiyue.github.io/</id>
+  <id>http://xiiyue.gitee.io/</id>
   
   <author>
     <name>xiyue</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>01-AnsysWorkbench-热源扩散</title>
-    <link href="http://xiiyue.github.io/2019/11/09/20191109_AnsysWorkbench_01_%E7%83%AD%E6%BA%90%E6%89%A9%E6%95%A3/"/>
-    <id>http://xiiyue.github.io/2019/11/09/20191109_AnsysWorkbench_01_热源扩散/</id>
+    <link href="http://xiiyue.gitee.io/2019/11/09/20191109_AnsysWorkbench_01_%E7%83%AD%E6%BA%90%E6%89%A9%E6%95%A3/"/>
+    <id>http://xiiyue.gitee.io/2019/11/09/20191109_AnsysWorkbench_01_热源扩散/</id>
     <published>2019-11-09T11:47:25.000Z</published>
     <updated>2019-11-10T11:26:51.521Z</updated>
     
@@ -32,17 +32,17 @@
     </summary>
     
     
-      <category term="研究学习" scheme="http://xiiyue.github.io/categories/%E7%A0%94%E7%A9%B6%E5%AD%A6%E4%B9%A0/"/>
+      <category term="研究学习" scheme="http://xiiyue.gitee.io/categories/%E7%A0%94%E7%A9%B6%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="AnsysWorkbench" scheme="http://xiiyue.github.io/tags/AnsysWorkbench/"/>
+      <category term="AnsysWorkbench" scheme="http://xiiyue.gitee.io/tags/AnsysWorkbench/"/>
     
   </entry>
   
   <entry>
     <title>Mathematica使用记录01-分式</title>
-    <link href="http://xiiyue.github.io/2019/10/23/20191023_Mathematica%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95_01_%E5%88%86%E5%BC%8F/"/>
-    <id>http://xiiyue.github.io/2019/10/23/20191023_Mathematica使用记录_01_分式/</id>
+    <link href="http://xiiyue.gitee.io/2019/10/23/20191023_Mathematica%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95_01_%E5%88%86%E5%BC%8F/"/>
+    <id>http://xiiyue.gitee.io/2019/10/23/20191023_Mathematica使用记录_01_分式/</id>
     <published>2019-10-23T08:02:08.000Z</published>
     <updated>2019-10-30T13:32:23.025Z</updated>
     
@@ -55,10 +55,10 @@
     </summary>
     
     
-      <category term="研究学习" scheme="http://xiiyue.github.io/categories/%E7%A0%94%E7%A9%B6%E5%AD%A6%E4%B9%A0/"/>
+      <category term="研究学习" scheme="http://xiiyue.gitee.io/categories/%E7%A0%94%E7%A9%B6%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Mathematic" scheme="http://xiiyue.github.io/tags/Mathematic/"/>
+      <category term="Mathematic" scheme="http://xiiyue.gitee.io/tags/Mathematic/"/>
     
   </entry>
   
