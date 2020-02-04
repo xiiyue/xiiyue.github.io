@@ -57,28 +57,37 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="兮xiyue曰">
-<meta property="og:url" content="http://xiiyue.gitee.io/index.html">
+  <meta name="description" content="0 引言用md写发布到网络上的文章需要利用图床，如果图片体积太大，不仅上传图床需要时间，网页加载也要时间，所以可以考虑减小图片体积。经过一番搜索，找到了TinyPNG在线压缩网站，只需图片拖进网站，然后等待，然后下载。浏览器下载完后要切换到下载目录，剪切图片，跳回图片保存目录替换图片，如果下载时指定目录的话，下次写另一篇文章，又要换到另一个位置，烦死了！ 1 模型的建立我会为每一篇文章指定一个图片">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基于TinyPNG所提供API的自动上传压缩可视化py脚本">
+<meta property="og:url" content="http://xiiyue.gitee.io/2020/02/02/基于TinyPNG所提供API的自动上传压缩可视化py脚本/index.html">
 <meta property="og:site_name" content="兮xiyue曰">
+<meta property="og:description" content="0 引言用md写发布到网络上的文章需要利用图床，如果图片体积太大，不仅上传图床需要时间，网页加载也要时间，所以可以考虑减小图片体积。经过一番搜索，找到了TinyPNG在线压缩网站，只需图片拖进网站，然后等待，然后下载。浏览器下载完后要切换到下载目录，剪切图片，跳回图片保存目录替换图片，如果下载时指定目录的话，下次写另一篇文章，又要换到另一个位置，烦死了！ 1 模型的建立我会为每一篇文章指定一个图片">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://s2.ax1x.com/2020/02/03/10hV6H.jpg">
+<meta property="og:image" content="https://s2.ax1x.com/2020/02/04/10q974.jpg">
+<meta property="og:image" content="https://s2.ax1x.com/2020/02/04/10qA91.jpg">
+<meta property="og:updated_time" content="2020-02-04T03:42:03.989Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="兮xiyue曰">
-  <link rel="canonical" href="http://xiiyue.gitee.io/">
+<meta name="twitter:title" content="基于TinyPNG所提供API的自动上传压缩可视化py脚本">
+<meta name="twitter:description" content="0 引言用md写发布到网络上的文章需要利用图床，如果图片体积太大，不仅上传图床需要时间，网页加载也要时间，所以可以考虑减小图片体积。经过一番搜索，找到了TinyPNG在线压缩网站，只需图片拖进网站，然后等待，然后下载。浏览器下载完后要切换到下载目录，剪切图片，跳回图片保存目录替换图片，如果下载时指定目录的话，下次写另一篇文章，又要换到另一个位置，烦死了！ 1 模型的建立我会为每一篇文章指定一个图片">
+<meta name="twitter:image" content="https://s2.ax1x.com/2020/02/03/10hV6H.jpg">
+  <link rel="canonical" href="http://xiiyue.gitee.io/2020/02/02/基于TinyPNG所提供API的自动上传压缩可视化py脚本/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false,
+    isHome: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>兮xiyue曰</title>
+  <title>基于TinyPNG所提供API的自动上传压缩可视化py脚本 | 兮xiyue曰</title>
   
 
 
@@ -242,12 +251,13 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
+
   <div id="posts" class="posts-expand">
-        <article itemscope itemtype="http://schema.org/Article">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block home">
+  <div class="post-block post">
     <link itemprop="mainEntityOfPage" href="http://xiiyue.gitee.io/2020/02/02/基于TinyPNG所提供API的自动上传压缩可视化py脚本/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -260,9 +270,8 @@
       <meta itemprop="name" content="兮xiyue曰">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2020/02/02/基于TinyPNG所提供API的自动上传压缩可视化py脚本/" class="post-title-link" itemprop="url">基于TinyPNG所提供API的自动上传压缩可视化py脚本</a>
+        <h1 class="post-title" itemprop="name headline">基于TinyPNG所提供API的自动上传压缩可视化py脚本
+
           
         </h1>
 
@@ -331,7 +340,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="0-引言"><a href="#0-引言" class="headerlink" title="0 引言"></a>0 引言</h2><p>用md写发布到网络上的文章需要利用图床，如果图片体积太大，不仅上传图床需要时间，网页加载也要时间，所以可以考虑减小图片体积。经过一番搜索，找到了TinyPNG在线压缩网站，只需图片拖进网站，然后等待，然后下载。<br>浏览器下载完后要切换到下载目录，剪切图片，跳回图片保存目录替换图片，如果下载时指定目录的话，下次写另一篇文章，又要换到另一个位置，烦死了！</p>
+        <h2 id="0-引言"><a href="#0-引言" class="headerlink" title="0 引言"></a>0 引言</h2><p>用md写发布到网络上的文章需要利用图床，如果图片体积太大，不仅上传图床需要时间，网页加载也要时间，所以可以考虑减小图片体积。经过一番搜索，找到了TinyPNG在线压缩网站，只需图片拖进网站，然后等待，然后下载。<br>浏览器下载完后要切换到下载目录，剪切图片，跳回图片保存目录替换图片，如果下载时指定目录的话，下次写另一篇文章，又要换到另一个位置，烦死了！</p>
 <h2 id="1-模型的建立"><a href="#1-模型的建立" class="headerlink" title="1 模型的建立"></a>1 模型的建立</h2><p>我会为每一篇文章指定一个图片保存目录，方便以后管理，而截图时直接就将图片保存在该目录下，所以我希望直接将图片拖进程序，然后它就直接变成了压缩成品，没有其他操作。</p>
 <p>窗口接收文件；一个标签，显示文字“图片”，一个标签，文字显示为拖入图片的绝对地址；一个标签，显示目前状态；一个按钮，按下则开始工作。<br>理论上，不需要按钮，但是由本人控制何时开始感觉更有安全感。</p>
 <p>为了方便查看各控件的坐标，在cad中做了初步的规划，由于界面实在太简单，也不准备再更改，就没有保存二维图，在此仅列出控件几何参数。</p>
@@ -426,371 +435,59 @@
 <p>37s，然后我下载了一个压缩图片的软件。</p>
 <p>最后，此项目结束，有所收获，并尽量还原实际的思考过程。</p>
 <h2 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"><span class="comment"># by xiyue</span></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> threading</span><br><span class="line"><span class="keyword">import</span> tinify</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> PyQt5.QtWidgets <span class="keyword">import</span> QWidget,QLabel,QApplication,QPushButton</span><br><span class="line"><span class="keyword">from</span> PyQt5 <span class="keyword">import</span> QtCore</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">xiiyue</span><span class="params">(QWidget)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        super(xiiyue, self).__init__()</span><br><span class="line">        <span class="comment">#定义变量</span></span><br><span class="line">        self.file_name = <span class="string">''</span></span><br><span class="line">        <span class="comment"># 窗口标题</span></span><br><span class="line">        self.setWindowTitle(<span class="string">"图片压缩"</span>)</span><br><span class="line">        <span class="comment"># 定义窗口大小</span></span><br><span class="line">        self.resize(<span class="number">500</span>, <span class="number">400</span>)</span><br><span class="line">        <span class="comment">#布置控件</span></span><br><span class="line">        self.load()</span><br><span class="line">        <span class="comment"># 启用Drops方法</span></span><br><span class="line">        self.setAcceptDrops(<span class="literal">True</span>)</span><br><span class="line">        <span class="comment">#signal and slot</span></span><br><span class="line">        self.butn.clicked.connect(self.butn_job)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">load</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="comment">#静态标签</span></span><br><span class="line">        self.label_s = QLabel(self)</span><br><span class="line">        self.label_s.setGeometry(<span class="number">40</span>, <span class="number">65</span>, <span class="number">60</span>, <span class="number">30</span>)</span><br><span class="line">        self.label_s.setStyleSheet(<span class="string">"color:red;font-size:15px;font-weight:bold;"</span>)</span><br><span class="line">        self.label_s.setAlignment(QtCore.Qt.AlignCenter)</span><br><span class="line">        self.label_s.setText(<span class="string">"图片"</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#路径标签</span></span><br><span class="line">        self.label_picfile = QLabel(self)</span><br><span class="line">        self.label_picfile.setGeometry(<span class="number">130</span>, <span class="number">50</span>, <span class="number">330</span>, <span class="number">60</span>)</span><br><span class="line">        self.label_picfile.setStyleSheet(<span class="string">"background-color:white;font-size:15px;"</span>)</span><br><span class="line">        self.label_picfile.setAlignment(QtCore.Qt.AlignLeft |QtCore.Qt.AlignVCenter)</span><br><span class="line">        self.label_picfile.setText(self.file_name)</span><br><span class="line">        self.label_picfile.setWordWrap(<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#状态标签</span></span><br><span class="line">        self.label_state = QLabel(self)</span><br><span class="line">        self.label_state.setGeometry(<span class="number">40</span>, <span class="number">120</span>, <span class="number">420</span>, <span class="number">160</span>)</span><br><span class="line">        self.label_state.setAlignment(QtCore.Qt.AlignCenter)</span><br><span class="line">        self.label_state.setStyleSheet(<span class="string">"font-size:50px;font-weight:bold;"</span>)</span><br><span class="line">        self.label_state.setText(<span class="string">"就绪"</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment">#确认按钮</span></span><br><span class="line">        self.butn = QPushButton(self)</span><br><span class="line">        self.butn.setGeometry(<span class="number">200</span>,<span class="number">305</span>,<span class="number">100</span>,<span class="number">30</span>)</span><br><span class="line">        self.butn.setText(<span class="string">"开始压缩"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 鼠标拖入事件</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">dragEnterEvent</span><span class="params">(self, evn)</span>:</span></span><br><span class="line">        self.file_name=evn.mimeData().text()</span><br><span class="line">        self.file_name=self.file_name[<span class="number">8</span>:]</span><br><span class="line">        self.label_picfile.setText(self.file_name)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 按钮函数</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">butn_job</span><span class="params">(self)</span>:</span></span><br><span class="line">        <span class="keyword">if</span> self.file_name != <span class="string">''</span>:</span><br><span class="line">            self.label_state.setText(<span class="string">"等"</span>)</span><br><span class="line">            self.thread_deal = threading.Thread(target=self.deal_pic)</span><br><span class="line">            self.thread_deal.start()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.label_state.setText(<span class="string">"拖入图片"</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 压缩图片</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">deal_pic</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.butn.blockSignals(<span class="literal">True</span>)</span><br><span class="line">        t1 = time.time()</span><br><span class="line">        source = tinify.from_file(self.file_name)</span><br><span class="line">        source.to_file(self.file_name)</span><br><span class="line">        t2 = time.time()</span><br><span class="line">        t = t2 - t1</span><br><span class="line">        compressions_this_month =str(tinify.compression_count)</span><br><span class="line">        self.setWindowTitle(<span class="string">"图片压缩"</span> + <span class="string">"本月使用："</span> + compressions_this_month + <span class="string">"用时："</span> + str(t))</span><br><span class="line">        self.label_state.setText(<span class="string">"就绪"</span>)</span><br><span class="line">        self.butn.blockSignals(<span class="literal">False</span>)</span><br><span class="line">        self.file_name = <span class="string">''</span></span><br><span class="line">        self.label_picfile.setText(self.file_name)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">"__main__"</span>:</span><br><span class="line">    tinify.key = <span class="string">"xxxxxxxxxxxxxxxxxxxxxxxxx"</span></span><br><span class="line">    app = QApplication(sys.argv)</span><br><span class="line">    xiyue = xiiyue()</span><br><span class="line">    xiyue.show()</span><br><span class="line">    sys.exit(app.exec_())</span><br></pre></td></tr></table></figure>
-        
-      
     </div>
 
     
     
     
+        
+      
+
       <footer class="post-footer">
-          <div class="post-eof"></div>
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/python/" rel="tag"># python</a>
+            
+          </div>
         
-      </footer>
-  </div>
-  
-  
-  
-  </article>
 
-    
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://xiiyue.gitee.io/2020/01/20/20200120_MatlabSimulink_Math Operations/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="xiyue">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/xiyueavatar.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="兮xiyue曰">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2020/01/20/20200120_MatlabSimulink_Math Operations/" class="post-title-link" itemprop="url">MatlabSimulink-Math Operations</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2020-01-20 19:17:25 / 修改时间：19:41:43" itemprop="dateCreated datePublished" datetime="2020-01-20T19:17:25+08:00">2020-01-20</time>
-            </span>
-          
-            
-
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/研究学习/" itemprop="url" rel="index"><span itemprop="name">研究学习</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
         
-      
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2020/01/20/20200120_MatlabSimulink_Math Operations/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2020/01/20/20200120_MatlabSimulink_Math Operations/" itemprop="commentCount"></span></a>
-  </span>
-  
-  
 
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Math Operations模块下的元件都试一下。<br>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2020/01/20/20200120_MatlabSimulink_Math Operations/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2020/01/20/20200120_MatlabSimulink_Math Operations/" rel="next" title="MatlabSimulink-Math Operations">
+                  <i class="fa fa-chevron-left"></i> MatlabSimulink-Math Operations
+                </a>
+              
             </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
-  </div>
-  
-  
-  
-  </article>
+            <span class="post-nav-divider"></span>
 
-    
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://xiiyue.gitee.io/2019/11/09/20191109_AnsysWorkbench_01_热源扩散/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="xiyue">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/xiyueavatar.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="兮xiyue曰">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2019/11/09/20191109_AnsysWorkbench_01_热源扩散/" class="post-title-link" itemprop="url">AnsysWorkbench-01-热源扩散</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
+            <div class="post-nav-prev post-nav-item">
               
-                
-              
-
-              <time title="创建时间：2019-11-09 19:47:25" itemprop="dateCreated datePublished" datetime="2019-11-09T19:47:25+08:00">2019-11-09</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-10 19:36:13" itemprop="dateModified" datetime="2019-11-10T19:36:13+08:00">2019-11-10</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/研究学习/" itemprop="url" rel="index"><span itemprop="name">研究学习</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-        
-      
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/11/09/20191109_AnsysWorkbench_01_热源扩散/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/11/09/20191109_AnsysWorkbench_01_热源扩散/" itemprop="commentCount"></span></a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>1T的硬盘只有300G的空余了！明年蠢驴的2077一出，再复习一下GTA5和巫师，岂不是没地方学习了？无奈之下只好开始清理磁盘，先用spacesniffer软件看看文件的分布情况，然后我发现了40G的ansys分析结果。。。<br>其他的也不用看了，仿真文字化工程启动！<br>工程目的是记录仿真过程，以后忘记了也能迅速上手。该工程下的所有场景都是经过极端简化和重新假设的，毕竟原模型要处理的细节很多，与主题无关。<br>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/11/09/20191109_AnsysWorkbench_01_热源扩散/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
             </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
+          </div>
         
       </footer>
+    
   </div>
   
   
   
   </article>
 
-    
-        <article itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block home">
-    <link itemprop="mainEntityOfPage" href="http://xiiyue.gitee.io/2019/10/23/20191023_Mathematica使用记录_01_分式/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="xiyue">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/xiyueavatar.JPG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="兮xiyue曰">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-            
-            <a href="/2019/10/23/20191023_Mathematica使用记录_01_分式/" class="post-title-link" itemprop="url">Mathematica使用记录01-分式</a>
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              
-                
-              
-
-              <time title="创建时间：2019-10-23 16:02:08" itemprop="dateCreated datePublished" datetime="2019-10-23T16:02:08+08:00">2019-10-23</time>
-            </span>
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-30 21:32:23" itemprop="dateModified" datetime="2019-10-30T21:32:23+08:00">2019-10-30</time>
-              </span>
-            
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/研究学习/" itemprop="url" rel="index"><span itemprop="name">研究学习</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-        
-      
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2019/10/23/20191023_Mathematica使用记录_01_分式/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/10/23/20191023_Mathematica使用记录_01_分式/" itemprop="commentCount"></span></a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>&emsp;&emsp;做作业的时候，碰到了分子还可以分母不忍直视的分式，为了做反z变换，必须将其化为几个可以查表的分式，虽然我可以手算，但是嘛。。。</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/10/23/20191023_Mathematica使用记录_01_分式/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-          <div class="post-eof"></div>
-        
-      </footer>
   </div>
-  
-  
-  
-  </article>
-
-    
-  </div>
-
-  
 
 
           </div>
           
+    
+    <div class="comments" id="comments"></div>
+  
 
         </div>
           
@@ -805,6 +502,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -817,6 +519,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0-引言"><span class="nav-text">0 引言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-模型的建立"><span class="nav-text">1 模型的建立</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-代码实现"><span class="nav-text">2 代码实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-窗体"><span class="nav-text">2.1 窗体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-子控件"><span class="nav-text">2.2 子控件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-拖入图片功能"><span class="nav-text">2.3 拖入图片功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-按钮功能"><span class="nav-text">2.4 按钮功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-压缩"><span class="nav-text">2.5 压缩</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-实机试验"><span class="nav-text">3 实机试验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#完整代码"><span class="nav-text">完整代码</span></a></li></ol></div>
+        
       </div>
       <!--/noindex-->
 
@@ -1005,68 +709,6 @@ if (document.querySelectorAll('pre.mermaid').length) {
 
   
 
-  
-    
-      
-    
-      
-    
-      
-    
-      
-        
-      
-    
-  
-    
-      
-<script type="text/x-mathjax-config">
-
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
-      processEscapes: true,
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    },
-    TeX: {
-      equationNumbers: {
-        autoNumber: 'AMS'
-      }
-    }
-  });
-
-  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
-    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
-      if (data.display) {
-        var next = data.script.nextSibling;
-        while (next && next.nodeName.toLowerCase() === '#text') {
-          next = next.nextSibling;
-        }
-        if (next && next.nodeName.toLowerCase() === 'br') {
-          next.parentNode.removeChild(next);
-        }
-      }
-    });
-  });
-
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for (i = 0; i < all.length; i += 1) {
-      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
-      if (element.nodeName.toLowerCase() == 'li') {
-        element = element.parentNode;
-      }
-      element.classList.add('has-jax');
-    }
-  });
-</script>
-<script>
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
-    MathJax.Hub.Typeset();
-  }, window.MathJax);
-</script>
-
-    
   
 
   

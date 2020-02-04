@@ -60,7 +60,7 @@
   <meta name="description" content="1T的硬盘只有300G的空余了！明年蠢驴的2077一出，再复习一下GTA5和巫师，岂不是没地方学习了？无奈之下只好开始清理磁盘，先用spacesniffer软件看看文件的分布情况，然后我发现了40G的ansys分析结果。。。其他的也不用看了，仿真文字化工程启动！工程目的是记录仿真过程，以后忘记了也能迅速上手。该工程下的所有场景都是经过极端简化和重新假设的，毕竟原模型要处理的细节很多，与主题无关。">
 <meta name="keywords" content="AnsysWorkbench">
 <meta property="og:type" content="article">
-<meta property="og:title" content="01-AnsysWorkbench-热源扩散">
+<meta property="og:title" content="AnsysWorkbench-01-热源扩散">
 <meta property="og:url" content="http://xiiyue.gitee.io/2019/11/09/20191109_AnsysWorkbench_01_热源扩散/index.html">
 <meta property="og:site_name" content="兮xiyue曰">
 <meta property="og:description" content="1T的硬盘只有300G的空余了！明年蠢驴的2077一出，再复习一下GTA5和巫师，岂不是没地方学习了？无奈之下只好开始清理磁盘，先用spacesniffer软件看看文件的分布情况，然后我发现了40G的ansys分析结果。。。其他的也不用看了，仿真文字化工程启动！工程目的是记录仿真过程，以后忘记了也能迅速上手。该工程下的所有场景都是经过极端简化和重新假设的，毕竟原模型要处理的细节很多，与主题无关。">
@@ -79,9 +79,9 @@
 <meta property="og:image" content="https://s2.ax1x.com/2019/11/10/MKA57t.png">
 <meta property="og:image" content="https://s2.ax1x.com/2019/11/10/MKVbLj.png">
 <meta property="og:image" content="https://s2.ax1x.com/2019/11/10/MKZJtP.png">
-<meta property="og:updated_time" content="2019-11-10T11:26:51.521Z">
+<meta property="og:updated_time" content="2019-11-10T11:36:13.969Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="01-AnsysWorkbench-热源扩散">
+<meta name="twitter:title" content="AnsysWorkbench-01-热源扩散">
 <meta name="twitter:description" content="1T的硬盘只有300G的空余了！明年蠢驴的2077一出，再复习一下GTA5和巫师，岂不是没地方学习了？无奈之下只好开始清理磁盘，先用spacesniffer软件看看文件的分布情况，然后我发现了40G的ansys分析结果。。。其他的也不用看了，仿真文字化工程启动！工程目的是记录仿真过程，以后忘记了也能迅速上手。该工程下的所有场景都是经过极端简化和重新假设的，毕竟原模型要处理的细节很多，与主题无关。">
 <meta name="twitter:image" content="https://s2.ax1x.com/2019/11/09/MnAaSH.png">
   <link rel="canonical" href="http://xiiyue.gitee.io/2019/11/09/20191109_AnsysWorkbench_01_热源扩散/">
@@ -98,7 +98,7 @@
   };
 </script>
 
-  <title>01-AnsysWorkbench-热源扩散 | 兮xiyue曰</title>
+  <title>AnsysWorkbench-01-热源扩散 | 兮xiyue曰</title>
   
 
 
@@ -281,7 +281,7 @@
       <meta itemprop="name" content="兮xiyue曰">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">01-AnsysWorkbench-热源扩散
+        <h1 class="post-title" itemprop="name headline">AnsysWorkbench-01-热源扩散
 
           
         </h1>
@@ -308,7 +308,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-11-10 19:26:51" itemprop="dateModified" datetime="2019-11-10T19:26:51+08:00">2019-11-10</time>
+                <time title="修改时间：2019-11-10 19:36:13" itemprop="dateModified" datetime="2019-11-10T19:36:13+08:00">2019-11-10</time>
               </span>
             
           
@@ -355,6 +355,7 @@
 <h2 id="场景介绍"><a href="#场景介绍" class="headerlink" title="场景介绍"></a>场景介绍</h2><p>有个东西在稳定发热，知道发热功率。它在向外界传热，我们要观察它周围物体的温度变化。</p>
 <h2 id="仿真步骤实录"><a href="#仿真步骤实录" class="headerlink" title="仿真步骤实录"></a>仿真步骤实录</h2><h3 id="1-建立模型"><a href="#1-建立模型" class="headerlink" title="1 建立模型"></a>1 建立模型</h3><p>用solidwork，然后存为  .x_t 文件。<br>（Ansys18.2，文件为中文名没出现问题）</p>
 <h3 id="2-导入WorkBench"><a href="#2-导入WorkBench" class="headerlink" title="2 导入WorkBench"></a>2 导入WorkBench</h3><p>先用Steady-State Thermal模块进行稳态热分析，从工具箱也就是Toolbox中找到，并拖动它到主界面中。<br><img src="https://s2.ax1x.com/2019/11/09/MnAaSH.png" alt="MnAaSH.png"></p>
+<p>（右键，在新标签页查看应该可看清晰图）</p>
 <p>上面的模块A、B、C是我已经完成的，现在为了说明添加过程，又拖了一个Steady-State Thermal模块。模块A不是必须的，它相当于在模块A中先处理了模型，然后传给了模块B中的B3：Geometry项。<br>如果一开始就添加的是Steady-State Thermal，那它就是模块A，A3就是Geometry项，对Geometry右键，将x_t 文件传进来。<br><img src="https://s2.ax1x.com/2019/11/09/MnV2ss.png" alt="MnV2ss.png"></p>
 <p>选择Browse后就是在跳出的对话框里找你要导入的文件。导入后基本上就不用再处理了，不然为什么要用其他的三维建模软件呢？</p>
 <h3 id="3-材料"><a href="#3-材料" class="headerlink" title="3 材料"></a>3 材料</h3><p>双击Steady-State Thermal模块的第二行Engineering Data项，右键选择edit也行。<br>现在进入了新的区域，在材料选择区中添加材料，先去自带的材料库中找，就是图中的A方案，或者在最后一栏输入自定义的材料名，自己建新材料，图中的B方案。<br><img src="https://s2.ax1x.com/2019/11/09/Mnn6kq.png" alt="Mnn6kq.png"></p>
@@ -426,6 +427,10 @@
 
             <div class="post-nav-prev post-nav-item">
               
+                <a href="/2020/01/20/20200120_MatlabSimulink_Math Operations/" rel="prev" title="MatlabSimulink-Math Operations">
+                  MatlabSimulink-Math Operations <i class="fa fa-chevron-right"></i>
+                </a>
+              
             </div>
           </div>
         
@@ -494,7 +499,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -507,7 +512,7 @@
             <a href="/categories/">
           
         
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -520,7 +525,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -570,7 +575,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
