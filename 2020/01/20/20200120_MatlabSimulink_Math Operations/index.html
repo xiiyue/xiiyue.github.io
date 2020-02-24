@@ -57,18 +57,32 @@
   };
 </script>
 
-  <meta name="description" content="Math Operations模块下的元件都试一下。">
+  <meta name="description" content="Math Operations模块下的元件挑一些试一下。">
 <meta name="keywords" content="Matlab">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MatlabSimulink-Math Operations">
 <meta property="og:url" content="http://xiiyue.gitee.io/2020/01/20/20200120_MatlabSimulink_Math Operations/index.html">
 <meta property="og:site_name" content="兮xiyue曰">
-<meta property="og:description" content="Math Operations模块下的元件都试一下。">
+<meta property="og:description" content="Math Operations模块下的元件挑一些试一下。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-01-20T11:41:43.474Z">
+<meta property="og:image" content="e:/xiyueblog/images/MatlabSimulink-Math%20Operations/001.jpg">
+<meta property="og:image" content="e:/xiyueblog/images/MatlabSimulink-Math%20Operations/002.jpg">
+<meta property="og:image" content="e:/xiyueblog/images/MatlabSimulink-Math%20Operations/003.jpg">
+<meta property="og:image" content="e:/xiyueblog/images/MatlabSimulink-Math%20Operations/004.jpg">
+<meta property="og:image" content="e:/xiyueblog/images/MatlabSimulink-Math%20Operations/005.jpg">
+<meta property="og:image" content="e:/xiyueblog/images/MatlabSimulink-Math%20Operations/006.jpg">
+<meta property="og:image" content="e:/xiyueblog/images/MatlabSimulink-Math%20Operations/007.jpg">
+<meta property="og:image" content="e:/xiyueblog/images/MatlabSimulink-Math%20Operations/008.jpg">
+<meta property="og:image" content="e:/xiyueblog/images/MatlabSimulink-Math%20Operations/009.jpg">
+<meta property="og:image" content="e:/xiyueblog/images/MatlabSimulink-Math%20Operations/010.jpg">
+<meta property="og:image" content="e:/xiyueblog/images/MatlabSimulink-Math%20Operations/011.jpg">
+<meta property="og:image" content="e:/xiyueblog/images/MatlabSimulink-Math%20Operations/012.jpg">
+<meta property="og:image" content="e:/xiyueblog/images/MatlabSimulink-Math%20Operations/013.jpg">
+<meta property="og:updated_time" content="2020-02-24T05:39:00.601Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MatlabSimulink-Math Operations">
-<meta name="twitter:description" content="Math Operations模块下的元件都试一下。">
+<meta name="twitter:description" content="Math Operations模块下的元件挑一些试一下。">
+<meta name="twitter:image" content="e:/xiyueblog/images/MatlabSimulink-Math%20Operations/001.jpg">
   <link rel="canonical" href="http://xiiyue.gitee.io/2020/01/20/20200120_MatlabSimulink_Math Operations/">
 
 
@@ -282,11 +296,19 @@
                 
               
 
-              <time title="创建时间：2020-01-20 19:17:25 / 修改时间：19:41:43" itemprop="dateCreated datePublished" datetime="2020-01-20T19:17:25+08:00">2020-01-20</time>
+              <time title="创建时间：2020-01-20 19:17:25" itemprop="dateCreated datePublished" datetime="2020-01-20T19:17:25+08:00">2020-01-20</time>
             </span>
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-24 13:39:00" itemprop="dateModified" datetime="2020-02-24T13:39:00+08:00">2020-02-24</time>
+              </span>
             
           
             <span class="post-meta-item">
@@ -295,7 +317,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/研究学习/" itemprop="url" rel="index"><span itemprop="name">研究学习</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/软件教程/" itemprop="url" rel="index"><span itemprop="name">软件教程</span></a></span>
 
                 
                 
@@ -328,8 +350,58 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Math Operations模块下的元件都试一下。<br><a id="more"></a></p>
-<h2 id="Abs"><a href="#Abs" class="headerlink" title="Abs"></a>Abs</h2><h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3>
+        <p>Math Operations模块下的元件挑一些试一下。<br><a id="more"></a></p>
+<h2 id="Algebraic-Constraint"><a href="#Algebraic-Constraint" class="headerlink" title="Algebraic Constraint"></a>Algebraic Constraint</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>将输入约束为0，输入为$f(x)$，在模块中构建等式$f(x)=0$，并且将$x$输出。</p>
+<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><h4 id="一元一次方程"><a href="#一元一次方程" class="headerlink" title="一元一次方程"></a>一元一次方程</h4><p>解方程$2x+1=0$</p>
+<p>模块的输入是$2x+1$，输出是$x$。利用模块的输出构造出$2x+1$的信号，然后连接到模块输入口。</p>
+<p><img src="E:\xiyueblog\images\MatlabSimulink-Math Operations\001.jpg" alt="001.jpg"></p>
+<p>解为-0.5没毛病！</p>
+<h4 id="二元一次方程"><a href="#二元一次方程" class="headerlink" title="二元一次方程"></a>二元一次方程</h4><p>解方程</p>
+<script type="math/tex; mode=display">
+\left\{
+\begin{aligned}
+2x-3y&=-5\\
+3x+2y&=12
+\end{aligned}
+\right.</script><p>方程有两个未知数，需要两个代数约束模块(Algebraic Constraint)，分别输出x和y。</p>
+<p><img src="E:\xiyueblog\images\MatlabSimulink-Math Operations\002.jpg" alt="002.jpg"></p>
+<p>利用两个输出x和y分别构造信号$2x-3y+5$和$3x+2y-12$</p>
+<p><img src="E:\xiyueblog\images\MatlabSimulink-Math Operations\003.jpg" alt="003.jpg"></p>
+<p>现在有个问题，两个方程，两个输入，怎么连？不管是x还是y，都满足这两个方程，不管怎么连，都应该得到相同的解，我试验后发现确实如此，可惜我也说不清楚详细原因。</p>
+<p><img src="E:\xiyueblog\images\MatlabSimulink-Math Operations\004.jpg" alt="004.jpg"></p>
+<p>得到解$x=2,y=3$</p>
+<h4 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h4><p>如果方程有多个解，比如方程$x^2=4$</p>
+<p><img src="E:\xiyueblog\images\MatlabSimulink-Math Operations\005.jpg" alt="005.jpg"></p>
+<p>似乎只能显示-2一个解，同时系统也给出了警告。我估计，如果在现实中处理某信号，两种不同的结果也不会同时一起出现吧？而且这个模块也不是给你解方程的。</p>
+<h2 id="Assignment"><a href="#Assignment" class="headerlink" title="Assignment"></a>Assignment</h2><h3 id="介绍-1"><a href="#介绍-1" class="headerlink" title="介绍"></a>介绍</h3><p>为指定元素赋指定值。</p>
+<h3 id="实例-1"><a href="#实例-1" class="headerlink" title="实例"></a>实例</h3><h4 id="一维信号"><a href="#一维信号" class="headerlink" title="一维信号"></a>一维信号</h4><p>以向量[1 2 3 4 5]为输入，对其修改。<br>对于一维的向量，模块设置中Number of output dimensions设为1</p>
+<h5 id="改全部信号"><a href="#改全部信号" class="headerlink" title="改全部信号"></a>改全部信号</h5><ul>
+<li>一次性改所有元素。<br>所有元素改成相同值<br>输入端Y0输入原信号[1 2 3 4 5]；输入端U输入更改信号，本次试验将所有信号改为0；模块设置中Index option选择Assign all。</li>
+</ul>
+<p><img src="E:\xiyueblog\images\MatlabSimulink-Math Operations\006.jpg" alt="006.jpg"></p>
+<ul>
+<li>所有元素更改但值不同<br>输入端U输入更改信号，本次试验将信号改为[6 7 8 9 0]。</li>
+</ul>
+<p><img src="E:\xiyueblog\images\MatlabSimulink-Math Operations\007.jpg" alt="007.jpg"></p>
+<h5 id="改某一元素"><a href="#改某一元素" class="headerlink" title="改某一元素"></a>改某一元素</h5><p>输入端Y0输入原信号[1 2 3 4 5]；输入端U输入更改信号0；模块设置中Index option选择Index vector(dialog)，Index项填入2，表示改变原信号的第二个元素（因为Index mode 设置的是One-based，即以1开始计数）。</p>
+<p><img src="E:\xiyueblog\images\MatlabSimulink-Math Operations\008.jpg" alt="008.jpg"></p>
+<h5 id="改多个元素"><a href="#改多个元素" class="headerlink" title="改多个元素"></a>改多个元素</h5><ul>
+<li>多个元素改为相同值<br>输入端Y0输入原信号[1 2 3 4 5]；输入端U输入更改信号0；模块设置中Index option选择Index vector(dialog)，Index项填入[1 3]，表示改变原信号的第一三信号。</li>
+</ul>
+<p><img src="E:\xiyueblog\images\MatlabSimulink-Math Operations\009.jpg" alt="009.jpg"></p>
+<ul>
+<li>多个元素改为不同值<br>输入端U输入更改信号[6 7]</li>
+</ul>
+<p><img src="E:\xiyueblog\images\MatlabSimulink-Math Operations\010.jpg" alt="010.jpg"></p>
+<h4 id="二维信号"><a href="#二维信号" class="headerlink" title="二维信号"></a>二维信号</h4><p>以3x4矩阵$\begin{bmatrix} 1 &amp; 2 &amp; 3 &amp; 4 \\ 5 &amp; 6 &amp; 7 &amp; 8 \\ 9 &amp; 10 &amp; 11 &amp; 12 \end{bmatrix}$为例，对其修改。<br>对于二维的矩阵，模块设置中Number of output dimensions设为2。</p>
+<h5 id="改全部信号-1"><a href="#改全部信号-1" class="headerlink" title="改全部信号"></a>改全部信号</h5><p>与一维类似，但出现了两个索引，两者都选Assign all。</p>
+<p><img src="E:\xiyueblog\images\MatlabSimulink-Math Operations\011.jpg" alt="011.jpg"></p>
+<h5 id="改某一元素-1"><a href="#改某一元素-1" class="headerlink" title="改某一元素"></a>改某一元素</h5><p>输入端U输入更改信号0；模块设置中Index option选择Index vector(dialog)，Index项填入2和3，表示改变原信号的第二行第三列元素。</p>
+<p><img src="E:\xiyueblog\images\MatlabSimulink-Math Operations\012.jpg" alt="012.jpg"></p>
+<h5 id="改多个元素-1"><a href="#改多个元素-1" class="headerlink" title="改多个元素"></a>改多个元素</h5><p>这次先看图。</p>
+<p><img src="E:\xiyueblog\images\MatlabSimulink-Math Operations\013.jpg" alt="013.jpg"></p>
+<p>输入端U输入更改信号$\begin{bmatrix} 1111 &amp; 2222 \\ 3333 &amp; 4444  \end{bmatrix}$，模块中都选了Index vector(dialog)，行中填[1 3]，表示1、3行，列中填了[2 4]，表示2、4列。于是四条线的交点组成一个2x2矩阵，与U接口对应，如果U接口为一个数值(比如0)，则交点的四个值都改为0。</p>
+
     </div>
 
     
@@ -418,7 +490,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Abs"><span class="nav-text">Abs</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#功能"><span class="nav-text">功能</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Algebraic-Constraint"><span class="nav-text">Algebraic Constraint</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例"><span class="nav-text">实例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一元一次方程"><span class="nav-text">一元一次方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二元一次方程"><span class="nav-text">二元一次方程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他问题"><span class="nav-text">其他问题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Assignment"><span class="nav-text">Assignment</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#介绍-1"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例-1"><span class="nav-text">实例</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一维信号"><span class="nav-text">一维信号</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#改全部信号"><span class="nav-text">改全部信号</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#改某一元素"><span class="nav-text">改某一元素</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#改多个元素"><span class="nav-text">改多个元素</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二维信号"><span class="nav-text">二维信号</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#改全部信号-1"><span class="nav-text">改全部信号</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#改某一元素-1"><span class="nav-text">改某一元素</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#改多个元素-1"><span class="nav-text">改多个元素</span></a></li></ol></li></ol></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -436,7 +508,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -449,7 +521,7 @@
             <a href="/categories/">
           
         
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -462,7 +534,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
@@ -608,6 +680,56 @@ if (document.querySelectorAll('pre.mermaid').length) {
 
   
 
+  
+    
+      
+<script type="text/x-mathjax-config">
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') {
+          next = next.nextSibling;
+        }
+        if (next && next.nodeName.toLowerCase() === 'br') {
+          next.parentNode.removeChild(next);
+        }
+      }
+    });
+  });
+
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      element = document.getElementById(all[i].inputID + '-Frame').parentNode;
+      if (element.nodeName.toLowerCase() == 'li') {
+        element = element.parentNode;
+      }
+      element.classList.add('has-jax');
+    }
+  });
+</script>
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML', () => {
+    MathJax.Hub.Typeset();
+  }, window.MathJax);
+</script>
+
+    
   
 
   
