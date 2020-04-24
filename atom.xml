@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://xiiyue.github.io/"/>
+  <link href="http://xiiyue.gitee.io/"/>
   <updated>2020-04-19T06:02:43.119Z</updated>
-  <id>http://xiiyue.github.io/</id>
+  <id>http://xiiyue.gitee.io/</id>
   
   <author>
     <name>xiyue</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>WorldEdit的使用</title>
-    <link href="http://xiiyue.github.io/2020/02/21/WorldEdit%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>http://xiiyue.github.io/2020/02/21/WorldEdit的使用/</id>
+    <link href="http://xiiyue.gitee.io/2020/02/21/WorldEdit%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://xiiyue.gitee.io/2020/02/21/WorldEdit的使用/</id>
     <published>2020-02-21T08:47:50.000Z</published>
     <updated>2020-04-19T06:02:43.119Z</updated>
     
@@ -35,17 +35,17 @@
     </summary>
     
     
-      <category term="软件教程" scheme="http://xiiyue.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%95%99%E7%A8%8B/"/>
+      <category term="软件教程" scheme="http://xiiyue.gitee.io/categories/%E8%BD%AF%E4%BB%B6%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Game" scheme="http://xiiyue.github.io/tags/Game/"/>
+      <category term="Game" scheme="http://xiiyue.gitee.io/tags/Game/"/>
     
   </entry>
   
   <entry>
     <title>Markdown个人使用语法记录</title>
-    <link href="http://xiiyue.github.io/2020/02/19/markdown%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/"/>
-    <id>http://xiiyue.github.io/2020/02/19/markdown个人使用语法记录/</id>
+    <link href="http://xiiyue.gitee.io/2020/02/19/markdown%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/"/>
+    <id>http://xiiyue.gitee.io/2020/02/19/markdown个人使用语法记录/</id>
     <published>2020-02-19T11:50:17.000Z</published>
     <updated>2020-02-24T06:35:36.971Z</updated>
     
@@ -58,17 +58,17 @@
     </summary>
     
     
-      <category term="软件教程" scheme="http://xiiyue.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%95%99%E7%A8%8B/"/>
+      <category term="软件教程" scheme="http://xiiyue.gitee.io/categories/%E8%BD%AF%E4%BB%B6%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="Markdown" scheme="http://xiiyue.github.io/tags/Markdown/"/>
+      <category term="Markdown" scheme="http://xiiyue.gitee.io/tags/Markdown/"/>
     
   </entry>
   
   <entry>
     <title>基于TinyPNG所提供API的自动上传压缩可视化py脚本</title>
-    <link href="http://xiiyue.github.io/2020/02/02/%E5%9F%BA%E4%BA%8ETinyPNG%E6%89%80%E6%8F%90%E4%BE%9BAPI%E7%9A%84%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E5%8E%8B%E7%BC%A9%E5%8F%AF%E8%A7%86%E5%8C%96py%E8%84%9A%E6%9C%AC/"/>
-    <id>http://xiiyue.github.io/2020/02/02/基于TinyPNG所提供API的自动上传压缩可视化py脚本/</id>
+    <link href="http://xiiyue.gitee.io/2020/02/02/%E5%9F%BA%E4%BA%8ETinyPNG%E6%89%80%E6%8F%90%E4%BE%9BAPI%E7%9A%84%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E5%8E%8B%E7%BC%A9%E5%8F%AF%E8%A7%86%E5%8C%96py%E8%84%9A%E6%9C%AC/"/>
+    <id>http://xiiyue.gitee.io/2020/02/02/基于TinyPNG所提供API的自动上传压缩可视化py脚本/</id>
     <published>2020-02-02T11:15:12.000Z</published>
     <updated>2020-02-24T06:13:16.120Z</updated>
     
@@ -81,17 +81,17 @@
     </summary>
     
     
-      <category term="编程" scheme="http://xiiyue.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+      <category term="编程" scheme="http://xiiyue.gitee.io/categories/%E7%BC%96%E7%A8%8B/"/>
     
     
-      <category term="python" scheme="http://xiiyue.github.io/tags/python/"/>
+      <category term="python" scheme="http://xiiyue.gitee.io/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>AnsysWorkbench-01-热源扩散</title>
-    <link href="http://xiiyue.github.io/2019/11/09/20191109_AnsysWorkbench_01_%E7%83%AD%E6%BA%90%E6%89%A9%E6%95%A3/"/>
-    <id>http://xiiyue.github.io/2019/11/09/20191109_AnsysWorkbench_01_热源扩散/</id>
+    <link href="http://xiiyue.gitee.io/2019/11/09/20191109_AnsysWorkbench_01_%E7%83%AD%E6%BA%90%E6%89%A9%E6%95%A3/"/>
+    <id>http://xiiyue.gitee.io/2019/11/09/20191109_AnsysWorkbench_01_热源扩散/</id>
     <published>2019-11-09T11:47:25.000Z</published>
     <updated>2020-02-24T05:39:53.853Z</updated>
     
@@ -104,17 +104,17 @@
     </summary>
     
     
-      <category term="软件教程" scheme="http://xiiyue.github.io/categories/%E8%BD%AF%E4%BB%B6%E6%95%99%E7%A8%8B/"/>
+      <category term="软件教程" scheme="http://xiiyue.gitee.io/categories/%E8%BD%AF%E4%BB%B6%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="AnsysWorkbench" scheme="http://xiiyue.github.io/tags/AnsysWorkbench/"/>
+      <category term="AnsysWorkbench" scheme="http://xiiyue.gitee.io/tags/AnsysWorkbench/"/>
     
   </entry>
   
   <entry>
     <title>Mathematica使用记录01-分式</title>
-    <link href="http://xiiyue.github.io/2019/10/23/20191023_Mathematica%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95_01_%E5%88%86%E5%BC%8F/"/>
-    <id>http://xiiyue.github.io/2019/10/23/20191023_Mathematica使用记录_01_分式/</id>
+    <link href="http://xiiyue.gitee.io/2019/10/23/20191023_Mathematica%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95_01_%E5%88%86%E5%BC%8F/"/>
+    <id>http://xiiyue.gitee.io/2019/10/23/20191023_Mathematica使用记录_01_分式/</id>
     <published>2019-10-23T08:02:08.000Z</published>
     <updated>2019-10-30T13:32:23.025Z</updated>
     
@@ -127,10 +127,10 @@
     </summary>
     
     
-      <category term="研究学习" scheme="http://xiiyue.github.io/categories/%E7%A0%94%E7%A9%B6%E5%AD%A6%E4%B9%A0/"/>
+      <category term="研究学习" scheme="http://xiiyue.gitee.io/categories/%E7%A0%94%E7%A9%B6%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="Mathematic" scheme="http://xiiyue.github.io/tags/Mathematic/"/>
+      <category term="Mathematic" scheme="http://xiiyue.gitee.io/tags/Mathematic/"/>
     
   </entry>
   
