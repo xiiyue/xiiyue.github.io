@@ -65,7 +65,7 @@
 <meta property="og:site_name" content="兮xiyue曰">
 <meta property="og:description" content="选区选点小木斧左键选择第一个点，右键选择第二个点。 玩家空中并没有方块供小木斧敲。 //pos1    确定第一个点//pos2    确定第二个点将玩家所在地的位置作为选择点，且是脚所在的方块，不是脚踩的方块。 另外，该指令后面可以加坐标精确指定，//pos1 x,y,z。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-04-19T06:02:43.119Z">
+<meta property="og:updated_time" content="2020-05-12T02:31:40.202Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WorldEdit的使用">
 <meta name="twitter:description" content="选区选点小木斧左键选择第一个点，右键选择第二个点。 玩家空中并没有方块供小木斧敲。 //pos1    确定第一个点//pos2    确定第二个点将玩家所在地的位置作为选择点，且是脚所在的方块，不是脚踩的方块。 另外，该指令后面可以加坐标精确指定，//pos1 x,y,z。">
@@ -293,7 +293,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-19 14:02:43" itemprop="dateModified" datetime="2020-04-19T14:02:43+08:00">2020-04-19</time>
+                <time title="修改时间：2020-05-12 10:31:40" itemprop="dateModified" datetime="2020-05-12T10:31:40+08:00">2020-05-12</time>
               </span>
             
           
@@ -382,9 +382,11 @@
 <p><code>//hcyl &lt;方块&gt; &lt;东西半径&gt;,[南北半径] &lt;高度&gt;</code><br>生成空心椭圆柱。</p>
 <h4 id="金字塔"><a href="#金字塔" class="headerlink" title="金字塔"></a>金字塔</h4><p><code>//pyramid &lt;方块&gt; &lt;高度&gt;</code><br>生成实心金字塔，$l=2h-1$，玩家脚在底面中心。</p>
 <p><code>//hpyramid &lt;方块&gt; &lt;高度&gt;</code><br>生成空心金字塔。</p>
-<h4 id="直线"><a href="#直线" class="headerlink" title="直线"></a>直线</h4><p>必须是默认选区模式。<br><code>line &lt;方块&gt; [直径]</code><br>在选区的两个端点（pos1和pos2）之间生成直线线条，不填直径就是最细的线。</p>
+<h4 id="直线"><a href="#直线" class="headerlink" title="直线"></a>直线</h4><p>必须是默认选区模式(长方体选区模式<code>//sel cuboid</code>)。<br>相当于选择直线两端点。<br><code>line &lt;方块&gt; [直径]</code><br>在选区的两个端点（pos1和pos2）之间生成直线线条，不填直径就是最细的线。</p>
 <p>另，有flag。<br>-h    生成中空线条，类似与管道。</p>
-<h4 id="曲线"><a href="#曲线" class="headerlink" title="曲线"></a>曲线</h4><h2 id="剪贴板"><a href="#剪贴板" class="headerlink" title="剪贴板"></a>剪贴板</h2><h4 id="复制"><a href="#复制" class="headerlink" title="复制"></a>复制</h4><p><code>//copy</code><br>复制选区内容，选好复制时的站位！</p>
+<h4 id="曲线"><a href="#曲线" class="headerlink" title="曲线"></a>曲线</h4><p>必须是多面体选区模式<code>//sel convex</code>。<br>相当于从始端开始选择若干曲线上的点，其连线就是目标曲线。<br><code>curve &lt;方块&gt; [直径]</code><br>根据选择点顺序生成曲线。</p>
+<p>另，有flag。<br>-h    生成中空线条，类似与管道。</p>
+<h2 id="剪贴板"><a href="#剪贴板" class="headerlink" title="剪贴板"></a>剪贴板</h2><h4 id="复制"><a href="#复制" class="headerlink" title="复制"></a>复制</h4><p><code>//copy</code><br>复制选区内容，选好复制时的站位！</p>
 <h4 id="粘贴"><a href="#粘贴" class="headerlink" title="粘贴"></a>粘贴</h4><p><code>//paste</code><br>粘贴剪贴板内的内容，现在复制时站位的作用就体现出来了，复制时玩家与选区的相对位置会保留，粘贴的副本也会保持一样的相对位置。</p>
 <p>另，有flag。<br>-a    粘贴时忽略空气方块，不会让空气方块破坏其他原有方块<br>-s    粘贴后，选区从原区域换到复制出来的新区域<br>-o    在原位置粘贴，修改结构不满意可以用此还原</p>
 <p>多flag一起用：<br><code>-a -s</code>或者<code>-as</code></p>
@@ -406,6 +408,13 @@
 <h4 id="多边形选区"><a href="#多边形选区" class="headerlink" title="多边形选区"></a>多边形选区</h4><p><code>//sel poly</code><br>左键，起始顶点。<br>右键，顶点。<br>右键，顶点。<br>……<br>可以不同高，选择不同高的顶点使选区变成柱形。</p>
 <h4 id="圆（椭）柱体选区"><a href="#圆（椭）柱体选区" class="headerlink" title="圆（椭）柱体选区"></a>圆（椭）柱体选区</h4><p><code>//sel cyl</code><br>左键，中心。<br>右键，面。<br>右键，面。<br>……</p>
 <h4 id="三维多面体选区"><a href="#三维多面体选区" class="headerlink" title="三维多面体选区"></a>三维多面体选区</h4><p><code>//sel convex</code><br>左键，起始顶点。<br>右键，顶点。<br>右键，顶点。<br>……</p>
+<h2 id="人物"><a href="#人物" class="headerlink" title="人物"></a>人物</h2><h4 id="脱困"><a href="#脱困" class="headerlink" title="脱困"></a>脱困</h4><p><code>/unstuck</code><br>传送至最近空位，当卡在方块里时使用，简写<code>/!</code>。</p>
+<h4 id="闪现"><a href="#闪现" class="headerlink" title="闪现"></a>闪现</h4><p><code>/jumpto</code><br>闪现到指针位置，如果指向墙，则到墙顶。<br>或手持指南针，左键。</p>
+<h4 id="穿墙"><a href="#穿墙" class="headerlink" title="穿墙"></a>穿墙</h4><p><code>/thru</code><br>或手持指南针，右键。</p>
+<h4 id="电梯"><a href="#电梯" class="headerlink" title="电梯"></a>电梯</h4><p><code>/ascend [层数]</code><br>在建筑中，上升，默认上升一层。</p>
+<p><code>/descend [层数]</code><br>下降</p>
+<h4 id="登顶"><a href="#登顶" class="headerlink" title="登顶"></a>登顶</h4><p><code>/ceil [预留量]</code><br>传送到结构顶部，头顶着天花板（预留量不填时），并在脚下放置玻璃方块。</p>
+<h4 id="普通上升"><a href="#普通上升" class="headerlink" title="普通上升"></a>普通上升</h4><p><code>/up &lt;距离&gt;</code><br>向上指定距离，并放置玻璃。<br>可以直接<code>/up</code>在脚下生成方块，不用setblock了。选区确定四角时也方便了。</p>
 
     </div>
 
@@ -440,6 +449,10 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2020/05/18/20200518_网易云音乐解锁/" rel="prev" title="20200518_网易云音乐解锁">
+                  20200518_网易云音乐解锁 <i class="fa fa-chevron-right"></i>
+                </a>
               
             </div>
           </div>
@@ -491,7 +504,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#选区选点"><span class="nav-text">选区选点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#小木斧"><span class="nav-text">小木斧</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#玩家"><span class="nav-text">玩家</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#远程"><span class="nav-text">远程</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选区调整"><span class="nav-text">选区调整</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#扩展"><span class="nav-text">扩展</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#缩减"><span class="nav-text">缩减</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#全扩缩"><span class="nav-text">全扩缩</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#移动选区"><span class="nav-text">移动选区</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选区编辑"><span class="nav-text">选区编辑</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#撤销"><span class="nav-text">撤销</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#反撤销"><span class="nav-text">反撤销</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#填充"><span class="nav-text">填充</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#替换"><span class="nav-text">替换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#移动"><span class="nav-text">移动</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结构"><span class="nav-text">结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#线性阵列"><span class="nav-text">线性阵列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#墙"><span class="nav-text">墙</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#壳"><span class="nav-text">壳</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#中心点"><span class="nav-text">中心点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#掏空"><span class="nav-text">掏空</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#加盖"><span class="nav-text">加盖</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#球体"><span class="nav-text">球体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#圆柱"><span class="nav-text">圆柱</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#金字塔"><span class="nav-text">金字塔</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#直线"><span class="nav-text">直线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#曲线"><span class="nav-text">曲线</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#剪贴板"><span class="nav-text">剪贴板</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#复制"><span class="nav-text">复制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#粘贴"><span class="nav-text">粘贴</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#剪切"><span class="nav-text">剪切</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#旋转"><span class="nav-text">旋转</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#镜像"><span class="nav-text">镜像</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#清空剪贴板"><span class="nav-text">清空剪贴板</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#跨存档复制"><span class="nav-text">跨存档复制</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选区模式"><span class="nav-text">选区模式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#清空区域选择"><span class="nav-text">清空区域选择</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#长方体选区"><span class="nav-text">长方体选区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#扩展式长方体选区"><span class="nav-text">扩展式长方体选区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#球体选区"><span class="nav-text">球体选区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#椭球体选区"><span class="nav-text">椭球体选区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多边形选区"><span class="nav-text">多边形选区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#圆（椭）柱体选区"><span class="nav-text">圆（椭）柱体选区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三维多面体选区"><span class="nav-text">三维多面体选区</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#选区选点"><span class="nav-text">选区选点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#小木斧"><span class="nav-text">小木斧</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#玩家"><span class="nav-text">玩家</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#远程"><span class="nav-text">远程</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选区调整"><span class="nav-text">选区调整</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#扩展"><span class="nav-text">扩展</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#缩减"><span class="nav-text">缩减</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#全扩缩"><span class="nav-text">全扩缩</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#移动选区"><span class="nav-text">移动选区</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选区编辑"><span class="nav-text">选区编辑</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#撤销"><span class="nav-text">撤销</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#反撤销"><span class="nav-text">反撤销</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#填充"><span class="nav-text">填充</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#替换"><span class="nav-text">替换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#移动"><span class="nav-text">移动</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结构"><span class="nav-text">结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#线性阵列"><span class="nav-text">线性阵列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#墙"><span class="nav-text">墙</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#壳"><span class="nav-text">壳</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#中心点"><span class="nav-text">中心点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#掏空"><span class="nav-text">掏空</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#加盖"><span class="nav-text">加盖</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#球体"><span class="nav-text">球体</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#圆柱"><span class="nav-text">圆柱</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#金字塔"><span class="nav-text">金字塔</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#直线"><span class="nav-text">直线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#曲线"><span class="nav-text">曲线</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#剪贴板"><span class="nav-text">剪贴板</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#复制"><span class="nav-text">复制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#粘贴"><span class="nav-text">粘贴</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#剪切"><span class="nav-text">剪切</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#旋转"><span class="nav-text">旋转</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#镜像"><span class="nav-text">镜像</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#清空剪贴板"><span class="nav-text">清空剪贴板</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#跨存档复制"><span class="nav-text">跨存档复制</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选区模式"><span class="nav-text">选区模式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#清空区域选择"><span class="nav-text">清空区域选择</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#长方体选区"><span class="nav-text">长方体选区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#扩展式长方体选区"><span class="nav-text">扩展式长方体选区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#球体选区"><span class="nav-text">球体选区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#椭球体选区"><span class="nav-text">椭球体选区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多边形选区"><span class="nav-text">多边形选区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#圆（椭）柱体选区"><span class="nav-text">圆（椭）柱体选区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三维多面体选区"><span class="nav-text">三维多面体选区</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#人物"><span class="nav-text">人物</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#脱困"><span class="nav-text">脱困</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#闪现"><span class="nav-text">闪现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#穿墙"><span class="nav-text">穿墙</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#电梯"><span class="nav-text">电梯</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#登顶"><span class="nav-text">登顶</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#普通上升"><span class="nav-text">普通上升</span></a></li></ol></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -509,7 +522,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -522,7 +535,7 @@
             <a href="/categories/">
           
         
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -535,7 +548,7 @@
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
