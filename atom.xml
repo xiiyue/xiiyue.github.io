@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xiiyue.gitee.io/"/>
-  <updated>2020-05-18T11:58:33.191Z</updated>
+  <updated>2020-05-23T12:22:09.612Z</updated>
   <id>http://xiiyue.gitee.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://xiiyue.gitee.io/2020/05/18/20200518_%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E8%A7%A3%E9%94%81/"/>
     <id>http://xiiyue.gitee.io/2020/05/18/20200518_网易云音乐解锁/</id>
     <published>2020-05-18T08:29:09.000Z</published>
-    <updated>2020-05-18T11:58:33.191Z</updated>
+    <updated>2020-05-23T12:22:09.612Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="UnblockNeteaseMusic"><a href="#UnblockNeteaseMusic" class="headerlink" title="UnblockNeteaseMusic"></a>UnblockNeteaseMusic</h2><p>GitHub上有一个UnblockNeteaseMusic项目，用于解锁网易云音乐客户端变灰歌曲。项目地址在<a href="https://github.com/nondanee/UnblockNeteaseMusic" target="_blank" rel="noopener">https://github.com/nondanee/UnblockNeteaseMusic</a>。</p><a id="more"></a><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h3><p>下载项目的源代码，然后解压出来。为了方便寻找，我解压到网易云音乐的安装位置。</p><p><img src="https://s1.ax1x.com/2020/05/18/YhnzIU.jpg" alt="pic001"></p><h3 id="2-本机配置"><a href="#2-本机配置" class="headerlink" title="2.本机配置"></a>2.本机配置</h3><p>运行cmd，转到源代码目录下。</p><p><img src="https://s1.ax1x.com/2020/05/18/YhuniD.jpg" alt="pic002"></p><p>输入指令 <code>node app.js -p 4000 -f 59.111.181.60</code></p><ul><li>‘4000’表示该服务开启的端口，默认是8080，这个端口有其他软件占用了，所以我随便选了4000</li><li>‘59.111.181.60’表示网易云服务器IP，用指令<code>ping music.163.com</code>获得。</li></ul><p><img src="https://s1.ax1x.com/2020/05/18/YhulQA.jpg" alt="pic003"></p><p>指令需要安装nodejs。<br>运行后配置完成。</p><p><img src="https://s1.ax1x.com/2020/05/18/Yhu3Lt.jpg" alt="pic004"></p><h2 id="pc端"><a href="#pc端" class="headerlink" title="pc端"></a>pc端</h2><p>node指令运行后，cmd窗口不要关。<br>打开网易云音乐客户端，设置—&gt;工具—&gt;自定义代理—&gt;HTTP—&gt;服务器填127.0.0.1—&gt;端口填4000（与指令中一致）</p><p><img src="https://s1.ax1x.com/2020/05/18/YhuYo8.jpg" alt="pic005"></p><p>确认后会重启客户端，然后灰色音乐会解锁。</p><h2 id="安卓端"><a href="#安卓端" class="headerlink" title="安卓端"></a>安卓端</h2><p>node指令运行后，cmd窗口不要关。<br>首先要获取本机的ip。在cmd中通过命令ipconfig获得，ipv4的那一项。<br>手机与pc在同一网络下，手机选择连接的WiFi，设置该WiFi，代理项选手动，服务器填ipconfig获得的本机ip，端口填4000（与node指令中一致）。<br>然后就能使用了，用完要把WiFi设置改回来。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="UnblockNeteaseMusic"><a href="#UnblockNeteaseMusic" class="headerlink" title="UnblockNeteaseMusic"></a>UnblockNeteaseMusic</h2><p>GitHub上有一个UnblockNeteaseMusic项目，用于解锁网易云音乐客户端变灰歌曲。项目地址在<a href="https://github.com/nondanee/UnblockNeteaseMusic" target="_blank" rel="noopener">https://github.com/nondanee/UnblockNeteaseMusic</a>。</p><a id="more"></a><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h3><p>下载项目的源代码，然后解压出来。为了方便寻找，我解压到网易云音乐的安装位置。</p><p><img src="https://s1.ax1x.com/2020/05/18/YhnzIU.jpg" alt="pic001"></p><h3 id="2-本机配置"><a href="#2-本机配置" class="headerlink" title="2.本机配置"></a>2.本机配置</h3><p>运行cmd，转到源代码目录下。</p><p><img src="https://s1.ax1x.com/2020/05/18/YhuniD.jpg" alt="pic002"></p><p>输入指令 <code>node app.js -p 4000 -f 59.111.181.60</code></p><ul><li>‘4000’表示该服务开启的端口，默认是8080，这个端口有其他软件占用了，所以我随便选了4000</li><li>‘59.111.181.60’表示网易云服务器IP，用指令<code>ping music.163.com</code>获得。</li></ul><p><img src="https://s1.ax1x.com/2020/05/18/YhulQA.jpg" alt="pic003"></p><p>指令需要安装nodejs。<br>运行后配置完成。</p><p><img src="https://s1.ax1x.com/2020/05/18/Yhu3Lt.jpg" alt="pic004"></p><h2 id="pc端"><a href="#pc端" class="headerlink" title="pc端"></a>pc端</h2><p>node指令运行后，cmd窗口不要关。<br>打开网易云音乐客户端，设置—&gt;工具—&gt;自定义代理—&gt;HTTP—&gt;服务器填127.0.0.1—&gt;端口填4000（与指令中一致）</p><p><img src="https://s1.ax1x.com/2020/05/18/YhuYo8.jpg" alt="pic005"></p><p>确认后会重启客户端，然后灰色音乐会解锁，用完将代理设置改回。</p><h2 id="移动端"><a href="#移动端" class="headerlink" title="移动端"></a>移动端</h2><p>手机与pc必须在同一网络下。<br>node指令运行后，cmd窗口不要关。<br>首先要获取本机的ip。在cmd中通过命令ipconfig获得，ipv4的那一项。<br>获取本机的ip后，然后设置手机WiFi的HTTP代理。代理项选手动，服务器填ipconfig获得的本机ip，端口填4000（与node指令中一致）。<br>然后就能使用了，用完将WiFi设置改回。</p>]]></content>
     
     <summary type="html">
     
